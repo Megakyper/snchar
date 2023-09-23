@@ -7,7 +7,7 @@ function count(div, num, cnt, k) {
         div.classList.add('true')
     }, 1500 / num);
 }
-var i=0;
+var i = 0;
 window.addEventListener('scroll', () => {
     let c = document.getElementById('circles');
     let Y = window.innerHeight;
@@ -25,11 +25,17 @@ window.addEventListener('scroll', () => {
     let syl = document.getElementById('syl')
     let b = syl.getBoundingClientRect().bottom
     let u = syl.getBoundingClientRect().top;
-    if (u < 2 * Y / 5 && b > (3*Y / 5)) {
+    if (u < 2 * Y / 5 && b > (3 * Y / 5)) {
         let pl = document.getElementById("p");
-        pl.style.transform=`translateY(${-u+2*Y/5-50}px)`
-        let r= document.getElementById('hr')
-        r.style.width=`${b-u-170}px`;
+        pl.style.transform = `translateY(${-u + 2 * Y / 5 -50}px)`
+        let r = document.getElementById('hr')
+        r.style.width = `${b - u - 170}px`;
     }
 })
-
+document.addEventListener('DOMContentLoaded', function() {
+    let btn = document.getElementById("btn");
+    btn.onclick = function() {
+            document.getElementById('btn-text-one').style.top = '-100%'
+            document.getElementById('btn-text-two').style.top = '50%'
+    };
+});
