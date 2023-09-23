@@ -199,6 +199,9 @@ section {
     width: 40vw;
     max-height: 60vh;
   }
+  >p{
+    font-size: max(2vh,1.25vw);
+  }
 }
 
 #land {
