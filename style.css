@@ -44,7 +44,7 @@ section {
   padding: min(5vw, 5vh);
 
   > h2 {
-    color: #9eb384;
+    color: #71835c;
     font-size: max(3vh, 3vw);
     margin-bottom: 4vh;
     letter-spacing: 1.5px;
@@ -54,6 +54,7 @@ section {
     margin-bottom: 3.5vh;
     text-align: start;
     font-size: max(2.5vh, 2vw);
+    text-align: justify;
   }
 
   .buttons {
@@ -112,14 +113,15 @@ section {
 
   > ul {
     list-style: none;
+    font-size: max(2.5vh, 2vw);
 
     > li {
       font-size: max(2.5vh, 2vw);
       margin-bottom: 10px;
+    }
 
-      > b {
-        color: #9eb384;
-      }
+    > b {
+      color: #71835c;
     }
   }
 
@@ -271,7 +273,7 @@ svg#pl {
 hr {
   transform-origin: 0;
   transform: rotate(90deg) translateY(min(7vh, 10vw));
-  background-color: #f7a700;
+  background-color: #aac193;
   border: 0;
   z-index: -1;
   height: 5px;
