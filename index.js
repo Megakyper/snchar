@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
     let u = syl.getBoundingClientRect().top;
     if (u < 2 * Y / 5 && b > (3 * Y / 5)) {
         let pl = document.getElementById("p");
-        pl.style.transform = `translateY(${-u + 2 * Y / 5 -50}px)`
+        pl.style.transform = `translateY(${-u + 2 * Y / 5 -20}px)`
         let r = document.getElementById('hr')
         r.style.width = `${b - u - 170}px`;
     }
