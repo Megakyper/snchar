@@ -8,8 +8,8 @@ html,
 head {
   max-width: 100vw;
   align-items: center;
-  color: #dfdce3;
-  background-color: #4484ce;
+  color: #fafaff;
+  background-color: #273469;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -43,9 +43,10 @@ section {
   padding: min(5vw, 5vh);
 
   > h2 {
-    color: #f78800;
+    color: #f7fd00;
     font-size: max(3vh, 3vw);
     margin-bottom: 4vh;
+    letter-spacing: 1.5px;
   }
 
   > p {
@@ -129,6 +130,7 @@ section {
 
     > li {
       font-size: max(2.5vh, 2vw);
+      margin-bottom: 30px;
     }
   }
   > h5 {
@@ -199,11 +201,14 @@ section {
     width: 40vw;
     max-height: 60vh;
   }
+  >h2{
+    color: #0083fd;
+  }
   > p {
     font-size: max(2vh, 1.25vw);
     text-align: justify;
   }
-  >ul>li>b{
+  > ul > li > b {
     color: #0081ac;
   }
 }
@@ -219,10 +224,10 @@ section {
 
 svg#pl {
   position: absolute;
-  width: min(15vw, 15vh);
-  aspect-ratio:1 ;
-  background-color: #4484ce ;
-  transform: rotate(180deg) translateX(min(15vh, 15vw));
+  width: min(15vw, 10vh);
+  aspect-ratio: 1;
+  background-color: #273469;
+  transform: rotate(180deg) translateX(min(12vh, 17vw));
 }
 
 .load {
@@ -264,7 +269,7 @@ svg#pl {
 
 hr {
   transform-origin: 0;
-  transform: rotate(90deg) translateY(min(7vh, 7vw));
+  transform: rotate(90deg) translateY(min(7vh, 10vw));
   background-color: #f7a700;
   border: 0;
   z-index: -1;
